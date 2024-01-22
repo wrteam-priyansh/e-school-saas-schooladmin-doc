@@ -1,5 +1,5 @@
 <!--
-    TODO: Leaves, Subscription 
+    TODO: Leaves, Subscription, Pay roll
 
 
 -->
@@ -134,13 +134,38 @@
                                 <li><a href='#feeTransactionLogs'>Fees transaction logs </a></li>
                             </ul>
                         </li>
+
+                        <li>
+                            <a href="#staffLeave"> Staff Leave <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
                         <li class='sub-menu'><a>Expense<i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#manageExpenseCategory'> Manage category </a></li>
                                 <li><a href='#manageExpense'>Manage expense</a></li>
-
                             </ul>
                         </li>
+
+                        <li>
+                            <a href="#payroll"> Payroll <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#manageSessionYears"> Manage session years <span
+                                    class="fa fa-arrow-right"></span></a>
+                        </li>
+
+                        <li class='sub-menu'><a>Staff management <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#roleAndPermission'> Role & Permission </a></li>
+                                <li><a href='#staff'> Staff </a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#support"> Support <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
                     </ul>
                 </nav>
             </div>
@@ -1120,6 +1145,21 @@
 
             </section>
 
+            <!-- Staff Leave  -->
+            <section class="section support" id="staffLeave">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Staff Leave </h2>
+                </div>
+                <img src="images/manage-leave.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/view-leave.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+            </section>
+
+
             <!-- Expense category  -->
             <section class="section support" id="manageExpenseCategory">
                 <div class="sec-title">
@@ -1146,7 +1186,125 @@
 
             </section>
 
+            <!-- Payroll  -->
+            <section class="section support" id="payroll">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Payroll </h2>
+                </div>
+                <img src="images/payroll.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+            </section>
 
+
+            <!-- Manage session years  -->
+            <section class="section support" id="manageSessionYears">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Manage session years </h2>
+                </div>
+                <img src="images/create-session-year.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/list-session-years.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            At a time only one session year can be activate. Active session will be consider as
+                            current/default session year.
+                        </h2>
+                    </li>
+                    </br>
+
+                </ul>
+
+            </section>
+
+            <!-- Role permission  -->
+            <section class="section support" id="roleAndPermission">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Role & Permission </h2>
+                </div>
+                <img src="images/list-roles.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/create-role.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            Following roles are reserved. Super Admin,School Admin,Teacher,Guardian,Student.
+                        </h2>
+                    </li>
+                    </br>
+                </ul>
+            </section>
+
+            <!-- Staff  -->
+            <section class="section support" id="staff">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Staff </h2>
+                </div>
+                <img src="images/create-staff.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/list-staff.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            If school has any active package at the time of adding staff then school admin can change
+                            the status of staff (active or de-active). If school don't have package then status of the
+                            staff will be consider as de-active by default.
+                        </h2>
+                    </li>
+                    <br />
+                    <li>
+                        <h2>
+                            School admin can only activate staffs if school has any active package. Once staff is
+                            activated it will added into the bill.
+                        </h2>
+                    </li>
+                    <br />
+                    <li>
+                        <h2>
+                            School admin can update or delete the staff. If school admin delete the staff it will be
+                            removed permanently. School admin need to delete other data related to staff before
+                            deleting staff.
+                        </h2>
+                    </li>
+                    <br />
+                </ul>
+            </section>
+
+
+            <!-- Support  -->
+            <section class="section support" id="support">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Support </h2>
+                </div>
+                <img src="images/support.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            School admin can contact the support team assigned by super admin.
+                        </h2>
+                    </li>
+                    </br>
+                </ul>
+            </section>
 
 
 
