@@ -144,8 +144,12 @@
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="#payroll"> Payroll <span class="fa fa-arrow-right"></span></a>
+
+                        <li class='sub-menu'><a>Payroll<i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#payroll'> Manage Payroll </a></li>
+                                <li><a href='#payrollSettings'>Payroll Settings</a></li>
+                            </ul>
                         </li>
 
                         <li>
@@ -157,10 +161,29 @@
                             <a href="#gallery"> Gallery <span class="fa fa-arrow-right"></span></a>
                         </li>
 
+                        <li class='sub-menu'><a>Certificate & ID Card <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#certificateTemplate'> Certificate Template </a></li>
+                                <li><a href='#certificateTemplate'> Student Certificate </a></li>
+                                <li><a href='#certificateTemplate'> Staff Certificate </a></li>
+                                <li><a href='#idCardSettings'> ID Card Settings </a></li>
+                                <li><a href='#idCardSettings'> Student ID Card </a></li>
+                                <li><a href='#idCardSettings'> Staff ID Card </a></li>
+                            </ul>
+                        </li>
+
                         <li class='sub-menu'><a>Staff management <i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#roleAndPermission'> Role & Permission </a></li>
                                 <li><a href='#staff'> Staff </a></li>
+                                <li><a href='#staff'> Bulk Upload </a></li>
+                            </ul>
+                        </li>
+
+                        <li class='sub-menu'><a>Staff Leave <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#staffLeave'> Staff Leave </a></li>
+                                <li><a href='#staffLeave'> Leave Report </a></li>
                             </ul>
                         </li>
 
@@ -170,6 +193,13 @@
 
                         <li>
                             <a href="#features"> Features <span class="fa fa-arrow-right"></span></a>
+                        </li>
+
+                        <li class='sub-menu'><a>Web Settings <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#content'> Content </a></li>
+                                <li><a href='#faqs'> FAQs </a></li>
+                            </ul>
                         </li>
 
                         <li class='sub-menu'><a>System settings<i class='fa fa-caret-down right'></i></a>
@@ -1242,7 +1272,7 @@
             </section>
 
             <!-- Staff Leave  -->
-            <section class="section support" id="staffLeave">
+            <!-- <section class="section support" id="staffLeave">
                 <div class="sec-title">
                     <span class="icon fa fa-support"></span>
                     <h2> Staff Leave </h2>
@@ -1253,7 +1283,7 @@
                 <img src="images/view-leave.png" alt="e-School Saas" style="width: 100%;">
                 <br />
                 <br />
-            </section>
+            </section> -->
 
 
             <!-- Expense category  -->
@@ -1290,10 +1320,32 @@
                 </div>
                 <img src="images/payroll.png" alt="e-School Saas" style="width: 100%;">
                 <br />
+                <br />
                 <ul>
                     <li>
                         <h2>
                             School admin can now download the salary slip of the employee.
+                        </h2>
+                    </li>
+                    </br>
+                </ul>
+                <br />
+
+                <br />
+            </section>
+
+            <section class="section support" id="payrollSettings">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Payroll Settings </h2>
+                </div>
+                <img src="images/payrollSettings.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            School admins can add staff allowances and deductions here, assign these payroll settings during staff creation, and edit the salary structure for existing staff members.
                         </h2>
                     </li>
                     </br>
@@ -1381,6 +1433,99 @@
 
             </section>
 
+            <!-- Certificates & ID Cards  -->
+            <section class="section support" id="certificateTemplate">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Certificate Template </h2>
+                </div>
+                <img src="images/createTemplates.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/createLayout.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/generateCertificate.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/certificate.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            <strong>Select Certificate Type:</strong> Choose whether you want to create a certificate for students or staff.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Fill Necessary Fields:</strong> Enter the required information such as name, page layout, height, width, background image, and your description.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Include User Data:</strong> If you want to include user data in the certificate, you can find this option below the description field. Simply click on it to include the data in your certificate template.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Save the Certificate Template:</strong> After entering all the details, save your certificate template.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Set Design Layout:</strong> Click on the layout button in the table action column to set your design layout. Use the drag-and-drop feature to arrange elements as desired and save the layout.
+                        </h2>
+                    </li>
+                    </br>
+
+                    <li>
+                        <h2>
+                            <strong>Generate Certificates: </strong>Navigate to the student or staff certificate section, select the users for whom you want to generate certificates, and click the generate button.
+                        </h2>
+                    </li>
+                    </br>
+                    <li class="text-danger">
+                        <h2>
+                            <strong>Note: </strong> If you want to generate student exam certificates, it is compulsory to select the exam and filter from the session year.
+                        </h2>
+                    </li>
+                    </br>
+
+                </ul>
+
+            </section>
+
+             <!-- ID Card  -->
+             <section class="section support" id="idCardSettings">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> ID Card </h2>
+                </div>
+                <img src="images/IDCardSettings.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/generateIDCard.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/IDCard.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            This layout allows users to customize ID cards by selecting specific fields, uploading background image, and choosing colors and layout styles, ensuring a personalized design for both students and staff.
+                        </h2>
+                    </li>
+                    </br>
+                </ul>
+            </section>
 
             <!-- Role permission  -->
             <section class="section support" id="roleAndPermission">
@@ -1414,13 +1559,13 @@
                 <img src="images/create-staff.png" alt="e-School Saas" style="width: 100%;">
                 <br />
                 <br />
-                <img src="images/list-staff.png" alt="e-School Saas" style="width: 100%;">
+                <img src="images/bulkStaff.png" alt="e-School Saas" style="width: 100%;">
                 <br />
                 <br />
                 <ul>
                     <li>
                         <h2>
-                            Default password of staff member is staff@123.
+                            Default password of staff member is staff mobile number.
                         </h2>
                     </li>
                     <br />
@@ -1447,6 +1592,38 @@
                         </h2>
                     </li>
                     <br />
+                    <li>
+                        <h2>
+                            Effortlessly manage your school's staff with our bulk upload feature. Upload multiple staff members at once using a CSV file, and easily assign roles to each member during the process.
+                        </h2>
+                    </li>
+                    <br>
+                </ul>
+            </section>
+
+             <!-- Staff Leave  -->
+             <section class="section support" id="staffLeave">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Staff </h2>
+                </div>
+                <img src="images/staffLeave.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/view-leave.png" alt="e-School Saas" style="width: 100%;">
+                <br>
+                <br>
+                <img src="images/leaveReport.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            Efficiently manage staff leave requests with our system, where staff members can apply for leaves directly through the app or panel. School administrators can swiftly approve or reject requests, while staff members have the convenience of uploading necessary documents for seamless processing.
+                        </h2>
+                    </li>
+                    <br />
+
                 </ul>
             </section>
 
@@ -1495,7 +1672,52 @@
 
             </section>
 
-            <!-- General settings -->
+            <!-- Web settings -->
+            <section class="section support" id="content">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Content</h2>
+                </div>
+
+                <img src="images/content.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            Empower school administrators to personalize their website's layout, colors, content, and images effortlessly using our comprehensive admin panel.
+                        </h2>
+                    </li>
+                </ul>
+                <br />
+                <br />
+
+            </section>
+            <!-- FAQs -->
+            <section class="section support" id="faqs">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>FAQs</h2>
+                </div>
+
+                <img src="images/faqs.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            Enhance user experience by adding a section for frequently asked questions (FAQs) to provide clear and helpful information.
+                        </h2>
+                    </li>
+                </ul>
+                <br />
+                <br />
+
+            </section>
+
+            <!-- General Settings -->
             <section class="section support" id="generalSettings">
                 <div class="sec-title">
                     <span class="icon fa fa-support"></span>
