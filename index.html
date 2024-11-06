@@ -74,9 +74,11 @@
                             <ul>
                                 <li><a href='#admissionFormFields'>Admission form fields</a></li>
                                 <li><a href='#studentsAdmission'>Students admission</a></li>
+                                <li><a href='#admissionInquiries'>Admission Inquiries</a></li>
                                 <li><a href='#studentDetails'>Student details</a></li>
                                 <li><a href='#studentsResetPassword'>Students reset password</a></li>
                                 <li><a href='#addBulkData'>Add Bulk data</a></li>
+                                <li><a href='#uploadProfileImages'>Upload Profile Images</a></li>
                                 <li><a href='#guardian'>Guardian</a></li>
                             </ul>
                         </li>
@@ -85,6 +87,13 @@
                             <ul>
                                 <li><a href='#manageTeachers'>Manage teachers </a></li>
                                 <li><a href='#bulkUploadTeachers'>Bulk upload teachers</a></li>
+                        <!-- <li>
+                            <a href="#teachers">Teachers <span class="fa fa-arrow-right"></span></a>
+                        </li> -->
+                        <li class='sub-menu'><a>Teachers<i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#teachers'>Manage Teachers </a></li>
+                                <li><a href='#bulkUploadTeachers'>Bulk Upload</a></li>
                             </ul>
                         </li>
                         <li class='sub-menu'><a>Timetable<i class='fa fa-caret-down right'></i></a>
@@ -105,8 +114,11 @@
                         <li>
                             <a href="#notification"> Notification <span class="fa fa-arrow-right"></span></a>
                         </li>
-                        <li>
-                            <a href="#studentAttendance"> Student attendance <span class="fa fa-arrow-right"></span></a>
+                        <li class='sub-menu'><a>Attendance<i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#studentAttendance'>View Attendance </a></li>
+                                <li><a href='#monthWiseAttendance'>Month Wise</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#announcement"> Announcement <span class="fa fa-arrow-right"></span></a>
@@ -145,8 +157,12 @@
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="#payroll"> Payroll <span class="fa fa-arrow-right"></span></a>
+
+                        <li class='sub-menu'><a>Payroll<i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#payroll'> Manage Payroll </a></li>
+                                <li><a href='#payrollSettings'>Payroll Settings</a></li>
+                            </ul>
                         </li>
 
                         <li>
@@ -178,6 +194,29 @@
                                 <li><a href='#bulkUploadStaffs'> Bulk upload staffs </a></li>
                                 <li><a href='#staffLeave'> Staff Leave </a></li>
                                 <li><a href='#leaveReport'> Leave Report </a></li>
+                        <li class='sub-menu'><a>Certificate & ID Card <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#certificateTemplate'> Certificate Template </a></li>
+                                <li><a href='#certificateTemplate'> Student Certificate </a></li>
+                                <li><a href='#certificateTemplate'> Staff Certificate </a></li>
+                                <li><a href='#idCardSettings'> ID Card Settings </a></li>
+                                <li><a href='#idCardSettings'> Student ID Card </a></li>
+                                <li><a href='#idCardSettings'> Staff ID Card </a></li>
+                            </ul>
+                        </li>
+
+                        <li class='sub-menu'><a>Staff management <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#roleAndPermission'> Role & Permission </a></li>
+                                <li><a href='#staff'> Staff </a></li>
+                                <li><a href='#staff'> Bulk Upload </a></li>
+                            </ul>
+                        </li>
+
+                        <li class='sub-menu'><a>Staff Leave <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#staffLeave'> Staff Leave </a></li>
+                                <li><a href='#staffLeave'> Leave Report </a></li>
                             </ul>
                         </li>
 
@@ -189,12 +228,24 @@
                             <a href="#features"> Features <span class="fa fa-arrow-right"></span></a>
                         </li>
 
+                        <li class='sub-menu'><a>Web Settings <i class='fa fa-caret-down right'></i></a>
+                            <ul>
+                                <li><a href='#content'> Content </a></li>
+                                <li><a href='#faqs'> FAQs </a></li>
+                            </ul>
+                        </li>
+
                         <li class='sub-menu'><a>System settings<i class='fa fa-caret-down right'></i></a>
                             <ul>
                                 <li><a href='#generalSettings'> General settings </a></li>
                                 <li><a href='#leaveSettings'>Leave settings</a></li>
                                 <li><a href='#onlineExamTermsCondition'>Online exam terms and condition</a></li>
+                                <li><a href='#emailTemplate'>Email Template</a></li>
                                 <li><a href='#paymentSettings'>Payment settings</a></li>
+                                <li><a href='#thirdPartyAPI'>Third-Party APIs</a></li>
+                                <li><a href='#termsAndConditions'>Terms and conditions</a></li>
+                                <li><a href='#privacyPolicy'>Privacy Policy</a></li>
+                                <li><a href='#refundCancellation'>Refund Cancellation</a></li>
                             </ul>
                         </li>
 
@@ -642,6 +693,25 @@
                 </ul>
             </section>
 
+            <!-- Admission inquiries  -->
+            <section class="section html-structure" id="admissionInquiries">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Admission Inquiries</h2>
+                </div>
+                <img src="images/admission-inquiries.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            The online student inquiries section displays a list of student applications, allowing admins to approve or reject each application. Admins can also send automated emails to parents notifying them of the application status.
+                        </h2>
+                    </li>
+                    <br>
+                </ul>
+            </section>
+
             <!-- Student details  -->
             <section class="section html-structure" id="studentDetails">
                 <div class="sec-title">
@@ -722,6 +792,27 @@
 
             </section>
 
+            <!--Upload profile images-->
+            <section class="section support" id="uploadProfileImages">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Upload Profile Images</h2>
+                </div>
+
+                <br />
+                <img src="images/upload-bulk-profile.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            Admins can upload bulk profile images for students and parents, streamlining the process of managing user profiles efficiently.
+                        </h2>
+                    </li>
+                    <br />
+                </ul>
+
+            </section>
 
             <!--Guardian-->
             <section class="section support" id="guardian">
@@ -736,7 +827,6 @@
 
             </section>
 
-
             <!--Teachers-->
             <section class="section support" id="manageTeachers">
                 <div class="sec-title">
@@ -748,40 +838,64 @@
                 <img src="images/create-teacher.png" alt="e-School Saas" style="width: 100%;">
                 <br />
 
-                <img src="images/list-teachers.png" alt="e-School Saas" style="width: 100%;">
+                <!-- <img src="images/list-teachers.png" alt="e-School Saas" style="width: 100%;"> -->
                 <br />
                 <br />
 
                 <ul>
                     <li>
                         <h2>
-                            If school has any active package at the time of adding teacher then school admin can change
-                            the status of teacher (active or de-active). If school don't have package then status of the
-                            teacher will be consider as de-active by default.
+                            If school has any active package at the time of adding teacher then school admin can change the status of teacher (active or de-active). If school don't have package then status of the teacher will be consider as de-active by default.
                         </h2>
                     </li>
                     <br />
                     <li>
                         <h2>
-                            School admin can only activate teachers if school has any active package. Once teacher is
-                            activated it will added into the bill.
+                            School admin can only activate teachers if school has any active package. Once teacher is activated it will added into the bill.
                         </h2>
                     </li>
                     <br />
                     <li>
                         <h2>
-                            School admin can update or delete the teacher. If school admin delete the teacher it will be
-                            removed permanently. School admin need to delete other data related to teacher before
-                            deleting teacher.
+                            School admin can update or delete the teacher. If school admin delete the teacher it will be removed permanently. School admin need to delete other data related to teacher before deleting teacher.
                         </h2>
                     </li>
+                    <br>
+                    <li>
+                        <h2>
+                            Teacher can login using given email and password. mobilee of teacher will be default passowrd.
+                        </h2>
+                    </li>
+                    <br>
+                    <li>
+                        <h2>
+                            Admins can manage teacher salaries by adding allowances or deductions, ensuring accurate payroll adjustments for each staff member
+                        </h2>
+                    </li>
+                    <br />
+                </ul>
 
+            </section>
+
+            <!-- Bulk teacher upload -->
+            <section class="section support" id="bulkUploadTeachers">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Bulk Upload Teachers</h2>
+                </div>
+
+                <br />
+                <img src="images/bulk-upload-teachers.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
                     <li>
                         <h2>
-                            Teacher can login using given email and password. Date of birth of teacher will be default
-                            passowrd. Example : DOB is 5-08-1947 then password will be 15081947(ddmmyyyy).
+                            Admins can upload bulk teacher data using a CSV file, making it easy to add or update multiple teacher profiles at once.
                         </h2>
                     </li>
+                    <br />
                     <br />
                 </ul>
 
@@ -955,6 +1069,27 @@
                 </ul>
             </section>
 
+            <!-- Month wise attendance  -->
+            <section class="section support" id="monthWiseAttendance">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Month Wise Student Attendance</h2>
+                </div>
+
+                <br />
+                <img src="images/month-wise-student-attendance.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br>
+                <ul>
+                    <li>
+                        <h2>
+                            Admins can view month-wise class attendance reports, providing a detailed overview of each class's attendance for the selected month.
+                        </h2>
+                    </li>
+                    <br />
+                </ul>
+            </section>
+
             <!-- Announcement  -->
             <section class="section support" id="announcement">
                 <div class="sec-title">
@@ -1019,10 +1154,6 @@
                 <br>
             </section>
 
-
-
-
-
             <!-- Exam grade  -->
             <section class="section support" id="examGrade">
                 <div class="sec-title">
@@ -1036,10 +1167,7 @@
                 <br>
             </section>
 
-
-            <!-- 
-              Online exam -->
-
+            <!-- Online exam -->
             <section class="section support" id="manageOnlineExam">
                 <div class="sec-title">
                     <span class="icon fa fa-support"></span>
@@ -1070,7 +1198,6 @@
 
                 </ul>
             </section>
-
 
             <section class="section support" id="manageQuestions">
                 <div class="sec-title">
@@ -1254,6 +1381,19 @@
             </section>
 
 
+            <!-- Staff Leave  -->
+            <!-- <section class="section support" id="staffLeave">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Staff Leave </h2>
+                </div>
+                <img src="images/manage-leave.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/view-leave.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+            </section> -->
 
 
             <!-- Expense category  -->
@@ -1290,10 +1430,32 @@
                 </div>
                 <img src="images/payroll.png" alt="e-School Saas" style="width: 100%;">
                 <br />
+                <br />
                 <ul>
                     <li>
                         <h2>
                             School admin can now download the salary slip of the employee.
+                        </h2>
+                    </li>
+                    </br>
+                </ul>
+                <br />
+
+                <br />
+            </section>
+
+            <section class="section support" id="payrollSettings">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Payroll Settings </h2>
+                </div>
+                <img src="images/payrollSettings.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            School admins can add staff allowances and deductions here, assign these payroll settings during staff creation, and edit the salary structure for existing staff members.
                         </h2>
                     </li>
                     </br>
@@ -1473,6 +1635,88 @@
                     <span class="icon fa fa-th-large"></span>
                     <h2> </h2>
                 </div><br />
+            <!-- Certificates & ID Cards  -->
+            <section class="section support" id="certificateTemplate">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Certificate Template </h2>
+                </div>
+                <img src="images/createTemplates.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/createLayout.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/generateCertificate.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/certificate.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            <strong>Select Certificate Type:</strong> Choose whether you want to create a certificate for students or staff.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Fill Necessary Fields:</strong> Enter the required information such as name, page layout, height, width, background image, and your description.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Include User Data:</strong> If you want to include user data in the certificate, you can find this option below the description field. Simply click on it to include the data in your certificate template.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Save the Certificate Template:</strong> After entering all the details, save your certificate template.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            <strong>Set Design Layout:</strong> Click on the layout button in the table action column to set your design layout. Use the drag-and-drop feature to arrange elements as desired and save the layout.
+                        </h2>
+                    </li>
+                    </br>
+
+                    <li>
+                        <h2>
+                            <strong>Generate Certificates: </strong>Navigate to the student or staff certificate section, select the users for whom you want to generate certificates, and click the generate button.
+                        </h2>
+                    </li>
+                    </br>
+                    <li class="text-danger">
+                        <h2>
+                            <strong>Note: </strong> If you want to generate student exam certificates, it is compulsory to select the exam and filter from the session year.
+                        </h2>
+                    </li>
+                    </br>
+
+                </ul>
+
+            </section>
+
+             <!-- ID Card  -->
+             <section class="section support" id="idCardSettings">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> ID Card </h2>
+                </div>
+                <img src="images/IDCardSettings.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/generateIDCard.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/IDCard.png" alt="e-School Saas" style="width: 100%;">
+                <br />
                 <br />
 
                 <ul>
@@ -1541,6 +1785,12 @@
 
 
 
+                            This layout allows users to customize ID cards by selecting specific fields, uploading background image, and choosing colors and layout styles, ensuring a personalized design for both students and staff.
+                        </h2>
+                    </li>
+                    </br>
+                </ul>
+            </section>
 
             <!-- Role permission  -->
             <section class="section support" id="roleAndPermission">
@@ -1574,13 +1824,13 @@
                 <img src="images/create-staff.png" alt="e-School Saas" style="width: 100%;">
                 <br />
                 <br />
-                <img src="images/list-staff.png" alt="e-School Saas" style="width: 100%;">
+                <img src="images/bulkStaff.png" alt="e-School Saas" style="width: 100%;">
                 <br />
                 <br />
                 <ul>
                     <li>
                         <h2>
-                            Default password of staff member is staff@123.
+                            Default password of staff member is staff mobile number.
                         </h2>
                     </li>
                     <br />
@@ -1607,6 +1857,38 @@
                         </h2>
                     </li>
                     <br />
+                    <li>
+                        <h2>
+                            Effortlessly manage your school's staff with our bulk upload feature. Upload multiple staff members at once using a CSV file, and easily assign roles to each member during the process.
+                        </h2>
+                    </li>
+                    <br>
+                </ul>
+            </section>
+
+             <!-- Staff Leave  -->
+             <section class="section support" id="staffLeave">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2> Staff </h2>
+                </div>
+                <img src="images/staffLeave.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <img src="images/view-leave.png" alt="e-School Saas" style="width: 100%;">
+                <br>
+                <br>
+                <img src="images/leaveReport.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            Efficiently manage staff leave requests with our system, where staff members can apply for leaves directly through the app or panel. School administrators can swiftly approve or reject requests, while staff members have the convenience of uploading necessary documents for seamless processing.
+                        </h2>
+                    </li>
+                    <br />
+
                 </ul>
             </section>
 
@@ -1697,7 +1979,53 @@
 
             </section>
 
-            <!-- General settings -->
+            <!-- Web settings -->
+            <section class="section support" id="content">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Content</h2>
+                </div>
+
+                <img src="images/content.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            Empower school administrators to personalize their website's layout, colors, content, and images effortlessly using our comprehensive admin panel.
+                        </h2>
+                    </li>
+                </ul>
+                <br />
+                <br />
+
+            </section>
+
+            <!-- FAQs -->
+            <section class="section support" id="faqs">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>FAQs</h2>
+                </div>
+
+                <img src="images/faqs.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+
+                <ul>
+                    <li>
+                        <h2>
+                            Enhance user experience by adding a section for frequently asked questions (FAQs) to provide clear and helpful information.
+                        </h2>
+                    </li>
+                </ul>
+                <br />
+                <br />
+
+            </section>
+
+            <!-- General Settings -->
             <section class="section support" id="generalSettings">
                 <div class="sec-title">
                     <span class="icon fa fa-support"></span>
@@ -1757,29 +2085,20 @@
 
             </section>
 
-            <!-- Payment settings -->
-            <section class="section support" id="paymentSettings">
+            <!-- Email Template -->
+            <section class="section support" id="emailTemplate">
                 <div class="sec-title">
                     <span class="icon fa fa-support"></span>
-                    <h2>Payment settings</h2>
+                    <h2>Email Template</h2>
                 </div>
 
-                <img src="images/fees-payment-settings.png" alt="e-School Saas" style="width: 100%;">
+                <img src="images/email-template.png" alt="e-School Saas" style="width: 100%;">
                 <br />
                 <br />
                 <ul>
                     <li>
                         <h2>
-                            School admin must setup these details before setting up fee related stuff.
-                            School admin can get stripe account from here.
-                            https://dashboard.stripe.com/register
-                        </h2>
-                    </li>
-                    </br>
-                    <li>
-                        <h2>
-                            It is recommended to select the same currency in payment settings as it is in stripe
-                            account.
+                            A school admin can create custom email templates for registering new students, staffs, teachers. This template includes credentials, key information, and any additional notes. The system will use the predefined format to send emails to new users, ensuring consistent communication and easy access to important details.
                         </h2>
                     </li>
                     </br>
@@ -1787,8 +2106,115 @@
 
             </section>
 
+            <!-- Payment settings -->
+            <section class="section support" id="paymentSettings">
+                <div class="sec-title">
+                    <span class="icon fa fa-support"></span>
+                    <h2>Payment settings</h2>
+                </div>
 
+                <img src="images/payment-configuration.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            We offer two types of payment gateways: Stripe and Razorpay, allowing secure and flexible payment processing for seamless transactions.
+                        </h2>
+                    </li>
+                    </br>
+                    <li>
+                        <h2>
+                            1. <a href="https://stripe.com" target="_blank">Stripe</a>
+                        </h2>
+                    </li>
+                    <li>
+                        <h2>
+                            2. <a href="https://razorpay.com" target="_blank">Razorpay</a>
+                        </h2>
+                    </li>
+                    </br>
+                </ul>
 
+            </section>
+
+            <!-- Third-Party APIs  -->
+            <section class="section html-structure" id="thirdPartyAPI">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Third-Party APIs</h2>
+                </div>
+
+                <img src="images/third-party-apis.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            Implemented Google reCAPTCHA to enhance security by preventing automated submissions. This adds an extra layer of protection for user interactions.
+                        </h2>
+                    </li>
+                    <br>
+                    <li>
+                        <h2>
+                            Online student admission form
+                        </h2>
+                    </li>
+                    <br>
+                    <li>
+                        <h2>
+                            Contact Us form
+                        </h2>
+                    </li>
+                    <br />
+                    </br>
+                </ul>
+            </section>
+
+            <!-- Terms and conditions -->
+            <section class="section html-structure" id="termsAndConditions">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Terms and conditions</h2>
+                </div>
+
+                <img src="images/terms-and-conditions.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+
+            </section>
+
+            <!-- Privacy policy  -->
+            <section class="section html-structure" id="privacyPolicy">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Privacy policy</h2>
+                </div>
+
+                <img src="images/privacy-policy.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <h2>
+                            Use this (your-admin-panelurl/page/privacy-policy) to apple app store and google play store
+                            at the time of deployment.
+                        </h2>
+                    </li>
+                    <br />
+                </ul>
+            </section>
+
+            <!-- Refund Cancellation  -->
+            <section class="section html-structure" id="refundCancellation">
+                <div class="sec-title">
+                    <span class="icon fa fa-th-large"></span>
+                    <h2>Refund Cancellation</h2>
+                </div>
+
+                <img src="images/refund-cancellation.png" alt="e-School Saas" style="width: 100%;">
+                <br />
+                <br />
+            </section>
 
 
             <!--Contact Us-->

@@ -586,3 +586,7 @@ img {
 h2 {
     font-weight: 600;
 }
+
+.text-danger {
+    color: #fe7c96 !important;
+}
